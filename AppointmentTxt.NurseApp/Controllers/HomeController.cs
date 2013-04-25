@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.SignalR.Client;
 
 namespace AppointmentTxt.NurseApp.Controllers
 {
@@ -27,6 +28,19 @@ namespace AppointmentTxt.NurseApp.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        [HttpPost]
+        public void PostTxtMessage()
+        {
+            string line = "";
+
+            // Connect to the service
+            var connection = new Connection("http://localhost/echo");
+   
+            // Send a message to the server
+            connection.Send(line).Wait();
+        
         }
     }
 }
