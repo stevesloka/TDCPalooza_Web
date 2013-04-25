@@ -208,6 +208,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastucture\TDCConnection.cs" />
+    <Compile Include="Infrastucture\TxtHub.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\TxtMessageModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

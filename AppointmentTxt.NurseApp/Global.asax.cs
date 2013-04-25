@@ -18,7 +18,7 @@ namespace AppointmentTxt.NurseApp
         protected void Application_Start()
         {
             //Setup SignalR Routing
-            RouteTable.Routes.MapConnection<TDCConnection>("echo", "/echo");
+            RouteTable.Routes.MapHubs();
 
             AreaRegistration.RegisterAllAreas();
 

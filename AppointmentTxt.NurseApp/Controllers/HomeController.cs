@@ -39,8 +39,11 @@ namespace AppointmentTxt.NurseApp.Controllers
             string line = "";
 
             // Connect to the service
-            var connection = new Connection("http://localhost/echo");
-   
+            var connection = new Connection("http://localhost/AppointmentTxt.NurseApp/echo");
+
+            // Start the connection
+            connection.Start().Wait();
+
             // Send a message to the server
             connection.Send(line).Wait();
         
