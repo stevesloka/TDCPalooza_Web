@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentTxt.Web", "Appoi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentTxt.Web.Tests", "AppointmentTxt.Web.Tests\AppointmentTxt.Web.Tests.csproj", "{06DE4B76-140B-4DA5-A265-147D6F9C1D93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentTxt.NurseApp", "AppointmentTxt.NurseApp\AppointmentTxt.NurseApp.csproj", "{A96BEE5D-D4DD-46A5-AF5B-406384CA187B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentTxt.NurseApp.Tests", "AppointmentTxt.NurseApp.Tests\AppointmentTxt.NurseApp.Tests.csproj", "{FBE0F52C-0D7C-455A-AC54-8364F3C7B4CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{06DE4B76-140B-4DA5-A265-147D6F9C1D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06DE4B76-140B-4DA5-A265-147D6F9C1D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06DE4B76-140B-4DA5-A265-147D6F9C1D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96BEE5D-D4DD-46A5-AF5B-406384CA187B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96BEE5D-D4DD-46A5-AF5B-406384CA187B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96BEE5D-D4DD-46A5-AF5B-406384CA187B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96BEE5D-D4DD-46A5-AF5B-406384CA187B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE0F52C-0D7C-455A-AC54-8364F3C7B4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE0F52C-0D7C-455A-AC54-8364F3C7B4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE0F52C-0D7C-455A-AC54-8364F3C7B4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE0F52C-0D7C-455A-AC54-8364F3C7B4CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
