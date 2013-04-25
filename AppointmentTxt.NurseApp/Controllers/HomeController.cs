@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AppointmentTxt.NurseApp.Models;
 using Microsoft.AspNet.SignalR.Client;
 
 namespace AppointmentTxt.NurseApp.Controllers
@@ -31,8 +32,10 @@ namespace AppointmentTxt.NurseApp.Controllers
         }
 
         [HttpPost]
-        public void PostTxtMessage()
+        public void PostTxtMessage(TxtMessageModel model)
         {
+
+
             string line = "";
 
             // Connect to the service
