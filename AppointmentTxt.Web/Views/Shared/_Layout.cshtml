@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>TDC - Palooza | Winning Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="UPMC - TDC">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/glyphicons.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/blue.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-primary btn-dropnav" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index.html">UPMC - Life Changing Medicine</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right animated">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Locations <b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" tabindex="-1">Hermitage</a></li>
+                                <li><a href="#" tabindex="-1">Natrona Heights Plaza</a></li>
+                                <li><a href="#" tabindex="-1">Shadyside</a></li>
+                                <li><a href="#" tabindex="-1">Washington</a></li>
+                                <li><a href="#" tabindex="-1">Monroeville</a></li>
+                                <li><a href="#" tabindex="-1">Robinson</a></li>
+                                <li><a href="#" tabindex="-1">North Huntingdon</a></li>
+                                <li><a href="#" tabindex="-1">Wexford</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @RenderBody()
+
+    <div id="landing9">
+        <div class="container">
+            <div class="row">
+                <div class="span5">
+                    <h1>The Service is Express - The Care is UPMC.</h1>
+                    <p>Our clinical staff is dedicated to providing you and your family with expert, express care. And with convenient payment options and free parking, we get you back home and on your way to feeling better, fast.</p>
+                    <p><a href="#" class="btn btn-primary btn-action">Get Started Now</a></p>
+                </div>
+                <div class="span7">
+                    <div class="js-video" style="text-align: center;">
+                        <iframe src="http://videoserver.upmc.com/iPhone-src/TDCABOUTipad.mp4" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="span7">
+                <div class="row">
+                    <div class="span3">
+                        <h2><i class="glyphicons-google_maps"></i>Address</h2>
+                        <address>
+                            111 Some Street, Suite 100
+		          <br>
+                            San Francisco, CA 94107
+                        </address>
+                    </div>
+                    <div class="span4">
+                        <h2><i class="glyphicons-phone"></i>Phone</h2>
+                        <address>
+                            Phone: (123) 456-7890
+		          <br>
+                            Fax: (123) 456-7890 	
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="copywrite">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <p>&copy; 2013 Bounce Template <span id="totop" class="pull-right">Back to Top <i class="icon-arrow-up icon-white"></i></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/bounce.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
