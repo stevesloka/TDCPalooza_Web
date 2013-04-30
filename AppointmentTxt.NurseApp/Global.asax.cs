@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using AppointmentTxt.NurseApp.Infrastucture;
+using Microsoft.AspNet.SignalR;
 
 namespace AppointmentTxt.NurseApp
 {
@@ -17,8 +18,8 @@ namespace AppointmentTxt.NurseApp
     {
         protected void Application_Start()
         {
-            //Setup SignalR Routing
-            RouteTable.Routes.MapConnection<TDCConnection>("echo", "/echo");
+            //Setup SignalR Hubs
+            RouteTable.Routes.MapHubs();
 
             AreaRegistration.RegisterAllAreas();
 

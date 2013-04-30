@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using AppointmentTxt.NurseApp.Models;
 using Microsoft.AspNet.SignalR.Client;
+using Microsoft.AspNet.SignalR.Client.Hubs;
 
 namespace AppointmentTxt.NurseApp.Controllers
 {
@@ -34,16 +36,21 @@ namespace AppointmentTxt.NurseApp.Controllers
         [HttpPost]
         public void PostTxtMessage(TxtMessageModel model)
         {
-
-
-            string line = "";
+            var host = ConfigurationManager.AppSettings["SiteURL"];
 
             // Connect to the service
-            var connection = new Connection("http://localhost/echo");
-   
+            var hubConnection = new HubConnection(host);
+
+            // Create a proxy to the chat service
+            var chat = hubConnection.CreateHubProxy("chat");
+
+            // Start the connection
+            hubConnection.Start().Wait();
+
+            string line = string.Format("Received message from: {0} - {1} Msg[{2}]", model.From, model.FromCity, model.Body);
+
             // Send a message to the server
-            connection.Send(line).Wait();
-        
+            chat.Invoke("Send", line).Wait();
         }
     }
 }
